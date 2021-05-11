@@ -1,0 +1,116 @@
+.main-container
+{
+grid-template-areas:"header header header"
+                    "player-one gameboard player-two " ;
+
+
+}
+
+
+#ButtonS{
+    height: 70px;
+    width: 150px;
+
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#ButtonS:hover{
+
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.2);
+
+}
+#ButtonS2{
+    height: 70px;
+    width: 150px;
+
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#ButtonS2:hover{
+
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.2);
+
+}
+#content{
+    position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width:auto;
+	height: auto;
+    background-image: url('../../assets/imagenes/Fondo.jpg');
+    background-color: #F2994A;
+	
+    background-color: black;
+	background-size: cover;
+	
+	z-index: 0;
+
+
+
+}
+.subfield{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+    
+   
+}
+.gamefield{
+    max-width: 300px;
+  
+}
+.player-two{
+    font-size: 20px;
+    background:crimson;
+  
+}
+.player-one{
+    font-size: 20px;
+    background :aqua;
+  
+}
+.gameboard{
+
+  grid-area:gameboard;
+  flex-direction: row;
+  justify-content: space-between;
+    justify-content: center;
+    margin-left: 43%;
+  
+
+    
+
+margin-right: auto;
+}
+.p{
+    font-size: 20px;
+    color:crimson;
+
+}
+.p2{
+    font-size: 20px;
+    color:aqua;
+    
+    
+    }
+    .player-one{
+        margin-top: 1rem;
+        grid-area:player-one;
+    }
+    .player-two{
+        margin-top: 1rem;
+        grid-area:player-two;
+    }

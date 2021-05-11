@@ -1,0 +1,75 @@
+.main-container
+{
+grid-template-areas:"header header header"
+                    "player-one gameboard player-two " ;
+
+
+}
+
+
+#ButtonS{
+    padding-left: 1rem;
+    height: 70px;
+    width: 150px;
+
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#ButtonS:hover{
+
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.2);
+
+}
+#ButtonS2{
+    padding-left: 1rem;
+    height: 70px;
+    width: 150px;
+
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#ButtonS2:hover{
+
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1.2);
+
+}
+#content{
+    position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width:auto;
+	height: auto;
+    background-image: url('../../assets/imagenes/Fondo.jpg');
+	
+    background-color: black;
+	background-size: cover;
+	
+	z-index: 0;
+
+
+
+}
+.subfield{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+    
+   
+}
+.gamefield{
+    max-width: 300px;
+  
+}

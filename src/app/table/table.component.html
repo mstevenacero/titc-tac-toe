@@ -1,0 +1,69 @@
+<audio autoplay src="../../assets/musica/MUSIK.mp3"></audio>
+<div id="content" class="main-container">
+    <div class="header">
+ 
+        <h1  style="font-size:100px ;font-weight:900;text-align: center;margin: 15px 0;margin-top: 2rem;"><img src="../../assets/imagenes/cooltext383794287538006.png" alt=""></h1>
+<div   style="text-align: center;margin: 15px 0;" class="field">
+    
+    <h3 style="font-size: 30px;margin-top: 4rem;" class="status">Inicia tocando el boton!</h3>
+    
+
+</div>
+    </div>
+    
+<div style="text-align: center;margin: 15px 0; margin-top: 8rem;" class="field">
+<button *ngIf="this.game.gameStatus===0" (click)="startGame()" id="ButtonS" mat-raised-button color="accent" class="start-game-button">JUGAR</button>
+
+
+
+
+</div>
+
+<div >
+    <div  *ngIf="this.game.gameStatus===1"class="gameboard">
+
+        <p class="p" style="font-weight: 800;margin: 0 0 4px;">Jugador 1</p>
+        <img src="../../assets/imagenes/pensar.gif" style="width: 70px;"alt="">
+        <div class="players player-one align-self-center">
+            
+    
+           
+        </div>
+        <div class="gamefield container-fluid"></div>
+        <div class="row">
+    
+           <div  (click)="clickSubfield($event)"position="0"class="subfield col-4"></div> 
+           <div (click)="clickSubfield($event)" position="1" class="subfield col-4"></div>
+           <div (click)="clickSubfield($event)" position="2"class="subfield col-4"></div>
+    
+        </div>
+        <div class="row">
+    
+            <div  (click)="clickSubfield($event)"position="3" class="subfield col-4"></div>
+            <div (click)="clickSubfield($event)"position="4" class="subfield col-4"></div>
+            <div (click)="clickSubfield($event)"position="5" class="subfield col-4"></div>
+     
+         </div>
+         <div class="row">
+    
+            <div (click)="clickSubfield($event)"position="6" class="subfield col-4"></div>
+            <div (click)="clickSubfield($event)"position="7" class="subfield col-4"></div>
+            <div (click)="clickSubfield($event)" position="8"class="subfield col-4"></div>
+     
+         </div>
+         <img src="../../assets/imagenes/pensar.gif" style="width: 70px;"alt="">
+         <div class="players player-two">
+            
+           
+        </div>
+        <p class="p2" style="font-weight: 800;margin: 0 0 10px;">Jugador 2</p>
+
+        
+    </div>
+
+</div>
+
+
+
+   
+</div>

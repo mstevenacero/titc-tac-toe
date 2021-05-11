@@ -1,0 +1,13 @@
+.main-container{
+    .gameboard{
+        .gamefield{
+            max-width: 300px;
+            .subfield{
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
